@@ -11,8 +11,8 @@ using Bll;
 using Dal;
 using Helper;
 using BaseClass;
-
-
+using System.Threading;
+using NUnit.Framework;
 
 namespace error_message
 {
@@ -114,9 +114,33 @@ namespace error_message
 
         #endregion
 
-        #region 比较器（需调用声明）
+        #region 窗体初始化
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            Startup_interface f2 = new Startup_interface();
+            f2.Show();
+
+            Thread thread1 = new Thread(threadFrom2);//创建新线程  
+
+            thread1.Start();
+            /***开始加载任务**/
+
+            thread1.Join();
+
+            f2.Close();
+
+
+            /***结束时销毁线程***/
+            thread1.Abort();
+
+        }
+        public void threadFrom2()
+        {
+            MethodInvoker MethInvo = new MethodInvoker(ShowForm2);
+            BeginInvoke(MethInvo);
+        }
+        public void ShowForm2()
         {
             PLM_Interface_Bll PLM_Interface_Bll = new PLM_Interface_Bll();
 
@@ -132,9 +156,7 @@ namespace error_message
                     this.comboBox1.Items.Add(Interface_nam);
                 }
             }
-
         }
-
         #endregion
 
         #region 子表显示

@@ -1,0 +1,4 @@
+E:\天石\github\error_message\error_message\obj\Release\error_message.Form1.resources
+E:\天石\github\error_message\error_message\obj\Release\error_message.Properties.Resources.resources
+E:\天石\github\error_message\error_message\obj\Release\error_message.Startup_interface.resources
+E:\天石\github\error_message\error_message\obj\Release\error_message.csproj.GenerateResource.Cache
