@@ -39,7 +39,7 @@ namespace error_message
         public int mail { get; set; }
 
         /// <summary>        /// 发送邮件日期        /// </summary>
-        public DateTime mail_date { get; set; }
+        public DateTime? mail_date { get; set; }
 
 
 

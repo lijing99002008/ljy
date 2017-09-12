@@ -16,7 +16,7 @@ namespace error_message
         public int id { get; set; }
 
         /// <summary>        /// 写入日期        /// </summary>
-        public DateTime time { get; set; }
+        public DateTime? time { get; set; }
 
 
 

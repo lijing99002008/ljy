@@ -53,3 +53,4 @@ E:\天石\github\error_message\error_message\obj\Debug\error_message.Startup_int
 E:\天石\github\error_message\error_message\obj\Debug\error_message.csproj.GenerateResource.Cache
 E:\天石\github\error_message\error_message\obj\Debug\error_message.exe
 E:\天石\github\error_message\error_message\obj\Debug\error_message.pdb
+E:\天石\github\error_message\error_message\bin\Debug\Model.pdb
